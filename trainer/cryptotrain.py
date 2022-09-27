@@ -23,8 +23,22 @@ def slow_text(text):
         print (char, end='')
         time.sleep(.08)
 
+def runGame():
+    print("Running Game... WIP")
 
-
-slow_text("Hello Human,")
-slow_text("Would you like to play a game?")
-
+slow_text("Would you like to play a game?: ")
+print("Welcome to the Cryptography Trainer, To get started select from either Random mode for a random password or Input Mode to put in your own password")
+print("Happy Code Cracking!")
+print("")
+print("Please Select a Mode")
+print("0 - Random Password Mode")
+print("1 - Input Mode")
+print("2 - Exit ")
+mode = input("")
+if (mode == "0" or mode == "1"):
+    print(f"Selected mode {mode} : Processing....")
+    runGame()
+elif  (mode == "2"):
+    slow_text("Goodbye... Exiting")
+else:
+    print("Invalid Choice... Exiting ")
